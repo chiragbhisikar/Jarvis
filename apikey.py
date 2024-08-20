@@ -1,2 +1,2 @@
-api_key = "812149e860b84f9fa21c4359f2934744"
-open_api_key = "sk-7ZXbYw0wcu58AKa6szJcQUGCOlsl5Uz9G3Pm7BmF8PT3BlbkFJiN0ZrEYa_K0EELGLzJX6DLApEeBs5lu4cOHybIrZAA"
+api_key = api_key_of_news_api
+open_api_key = open_ai_api_key
