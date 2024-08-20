@@ -3,8 +3,8 @@ import speech_recognition as sr  # For Speach Recognition
 import webbrowser
 import pyttsx3  # For Text-To-Speach
 import music_library
-from check import getArticles
-from client import aiProcess
+from retrieve_news import getArticles
+from retrive_ai_generated import aiProcess
 
 engine = pyttsx3.init()
 
@@ -45,7 +45,8 @@ def processCommand(command):
             speak(article["title"])
     # For AI Generated Response
     else:
-        aiProcess(command)
+        pass
+        # aiProcess(command)
         # Let Us handle by chatgpt
 
 

@@ -1,9 +1,10 @@
+from apiKey import api_key
 import requests
 
 
 def getArticles():
     response = requests.get(
-        "https://newsapi.org/v2/top-headlines?country=in&apiKey=812149e860b84f9fa21c4359f2934744"
+        f"https://newsapi.org/v2/top-headlines?country=in&apiKey={api_key}"
     )
 
     if response.status_code == 200:
@@ -12,7 +13,7 @@ def getArticles():
 
         # Extract the headlines
         articles = data.get("articles", [])
-    
+
         # for article in articles:
         #     print(article["title"])
 

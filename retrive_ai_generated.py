@@ -1,10 +1,10 @@
-# OPENAI_API_KEY="sk-7ZXbYw0wcu58AKa6szJcQUGCOlsl5Uz9G3Pm7BmF8PT3BlbkFJiN0ZrEYa_K0EELGLzJX6DLApEeBs5lu4cOHybIrZAA"
 from openai import OpenAI
+from apiKey import open_api_key
 
 
 def aiProcess(command):
     client = OpenAI(
-        api_key="sk-7ZXbYw0wcu58AKa6szJcQUGCOlsl5Uz9G3Pm7BmF8PT3BlbkFJiN0ZrEYa_K0EELGLzJX6DLApEeBs5lu4cOHybIrZAA",
+        api_key=open_api_key,
     )
 
     completion = client.chat.completions.create(
